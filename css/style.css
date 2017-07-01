@@ -24,3 +24,13 @@ body {
     font-weight: 300;
     line-height: 1.42em;
 }
+
+/*----------- главная --------------*/
+
+.header {
+    background-color: #1c5bc3;
+}
+
+.header__content-phone {
+    
+}

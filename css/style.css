@@ -52,6 +52,10 @@ body {
 
 /*------------- sidebar | all pages -------------*/
 
+.nav-menu__list {
+    list-style-type: none; 
+}
+
 .nav-menu__link {
     text-decoration: none;
 }
@@ -109,8 +113,27 @@ body {
     font-weight: bold;
 }
 
+.nav-menu__item:hover .nav-menu__item-text {
+    color: #221f1f;    
+}
+
 .nav-menu__link-text-active {
     color:#221f1f; 
+}
+
+/*------------- breadchrumbs | team, comments -------------*/
+
+.breadchrumbs__list {
+    list-style-type: none;
+}
+
+.breadchrumbs__link {
+    color: rgba(28, 91, 195, .8);
+}
+
+.breadchrumbs__link-active {
+    color: rgba(34, 31, 31, .8);
+    text-decoration: none;
 }
 
 /*------------- footer | all pages -------------*/

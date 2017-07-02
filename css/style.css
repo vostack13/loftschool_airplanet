@@ -250,7 +250,68 @@ body {
 
 /*------------- content | team.html -------------*/
 
+/*------------- team-users | team.html -------------*/
 
+.team-user__list {
+    list-style-type: none;
+}
+
+.team-user__item .team-user__item-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.team-user__item:nth-of-type(1) .team-user__item-avatar {
+    position: relative;
+    top: -25px;
+    left: -75px;
+}
+
+.team-user__item:nth-of-type(2) .team-user__item-avatar {
+    position: relative;
+    top: -10px;
+    left: -120px;
+}
+
+.team-user__item:nth-of-type(3) .team-user__item-avatar {
+    position: relative;
+    width: 600px;
+    top: -130px;
+    left: -165px;
+}
+
+.team-user__item:nth-of-type(4) .team-user__item-avatar {
+    position: relative;
+    width: 160px;
+    top: 0px;
+    left: 0px;
+}
+
+.team-user__item:nth-of-type(5) .team-user__item-avatar {
+    position: relative;
+    top: -20px;
+    left: -280px;
+}
+
+.team-user__item:nth-of-type(6) .team-user__item-avatar {
+    position: relative;
+    width: 330px;
+    top: 0px;
+    left: -150px;
+}
+
+.item-text__user {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-text__desc {
+    color: #1c5bc3;
+    font-weight: bold;
+    font-size: 14px;
+}
 
 /*------------- footer | all pages -------------*/
 

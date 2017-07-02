@@ -59,6 +59,7 @@ body {
 
 .nav-menu__link {
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .nav-menu__item:nth-of-type(1) .nav-menu__item-icon {
@@ -324,6 +325,33 @@ body {
     border-radius: 50%;
     overflow: hidden;
 }
+
+.comments__item:nth-of-type(1) .comments__item-avatar {
+    position: relative;
+    width: 170px;
+    top: 0px;
+    left: -5px;
+} 
+
+.comments__item:nth-of-type(2) .comments__item-avatar {
+    position: relative;
+    width: 170px;
+    top: -10px;
+    left: 0px;
+}
+
+.comments__item:nth-of-type(3) .comments__item-avatar {
+    position: relative;
+    top: 0px;
+    left: 0px;
+} 
+
+.comments__item:nth-of-type(4) .comments__item-avatar {
+    position: relative;
+    width: 160px;
+    top: 0px;
+    left: 0;
+} 
 
 .item-text__date {
     color: #656464;

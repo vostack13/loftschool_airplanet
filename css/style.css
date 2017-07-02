@@ -387,6 +387,47 @@ body {
     border-radius: 3px;
 }
 
+/*------------- form | comments.html -------------*/
+
+.form-comments__wrap {
+    background-color: #f5f5f5;
+}
+
+.form-coomments__title {
+    font-size: 49px;
+    font-weight: bold;
+}
+
+.form-comments__label {
+    font-size: 14px;
+}
+
+.input-focus:focus {
+    border: 1px solid #1c5bc3;
+    outline: none;
+}
+
+.form-comments__input {
+}
+
+input[type=text]{
+    border: none;
+    border-radius: 3px;
+}
+
+textarea {
+    border: none;
+    border-radius: 3px;
+    resize: none;
+}
+
+::-webkit-input-placeholder {color:rgba(34, 31, 31. .5); font-size: 14px;}
+::-moz-placeholder          {color:rgba(34, 31, 31. .5); font-size: 14px;}/* Firefox 19+ */
+:-moz-placeholder           {color:rgba(34, 31, 31. .5); font-size: 14px;}/* Firefox 18- */
+:-ms-input-placeholder      {color:rgba(34, 31, 31. .5); font-size: 14px;}
+
+
+
 /*------------- footer | all pages -------------*/
 
 .footer {

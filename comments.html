@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Отзывы</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -13,12 +13,12 @@
 
         <!-- шапка -->
         <header class="header">
-            <div class="header__logo">
-                <img src="../img/logos/logo_small.png" alt="" class="logo">
-            </div>
+            <a href="#" class="header__logo main-logo">
+                <img src="img/logos/logo_small.png" alt="Логотип компании AIR Planet" class="main-logo__img">
+            </a>
             <div class="header__contacts">
-                <a href="tel:88000039210" class="header__content-phone">8(800) 00-392-10</a>
-                <a href="#" class="header__content-schedule">График работы</a>
+                <a href="tel:+78000039210" class="header__phone">8(800) 00-392-10</a>
+                <button class="header__schedule">График работы</button>
             </div>
         </header>
 
@@ -61,8 +61,8 @@
             <main class="comments-content">
                 <div class="breadchrumbs">
                     <ul class="breadchrumbs__list">
-                        <li class="breadchrumbs__item"><a href="main.html" class="breadchrumbs__link">Главная</a></li>
-                        <li class="breadchrumbs__item"><a href="#" class="breadchrumbs__link breadchrumbs__link-active">/ Отзывы</a></li>
+                        <li class="breadchrumbs__item"><a href="main.html" class="breadchrumbs__item breadchrumbs__link">Главная</a></li>
+                        <li class="breadchrumbs__item"><span class="breadchrumbs__item">/ Экипаж</a></li>
                     </ul>
                 </div>
 
@@ -72,7 +72,7 @@
                     <ul class="comments__list">
                         <li class="comments__item">
                             <div class="comments__item-image">
-                                <img src="../img/content/comments/feed_user_01.jpg" alt="" class="comments__item-avatar">
+                                <img src="../img/content/comments/feed_user_01.jpg" alt="Аватар" class="comments__item-avatar">
                             </div>
                             <div class="comments__item-text">
                                 <p class="item-text__date">12.10.2016</p>
@@ -85,7 +85,7 @@
                         </li>
                         <li class="comments__item">
                             <div class="comments__item-image">
-                                <img src="../img/content/comments/feed_user_02.jpg" alt="" class="comments__item-avatar">
+                                <img src="../img/content/comments/feed_user_02.jpg" alt="Аватар" class="comments__item-avatar">
                             </div>
                             <div class="comments__item-text">
                                 <p class="item-text__date">01.02.2016</p>
@@ -98,7 +98,7 @@
                         </li>
                         <li class="comments__item">
                             <div class="comments__item-image">
-                                <img src="../img/content/comments/feed_user_none.png" alt="" class="comments__item-avatar">
+                                <img src="../img/content/comments/feed_user_none.png" alt="Аватар" class="comments__item-avatar">
                             </div>
                             <div class="comments__item-text">
                                 <p class="item-text__date">22.12.2015</p>
@@ -111,7 +111,7 @@
                         </li>
                         <li class="comments__item">
                             <div class="comments__item-image">
-                                <img src="../img/content/comments/feed_user_03.jpg" alt="" class="comments__item-avatar">
+                                <img src="../img/content/comments/feed_user_03.jpg" alt="Аватар" class="comments__item-avatar">
                             </div>
                             <div class="comments__item-text">
                                 <p class="item-text__date">14.08.2015</p>
@@ -132,23 +132,24 @@
                         <span class="info__text">из</span>
                         <span class="info__number-page">7</span>
                     </div>
-                    <a href="#" class="pagination__control"><</a>
-                    <ul class="paginaton__list">
-                        <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">7</a></li>
-                    </ul>
-                    <a href="#" class="pagination__control">></a>
+                    <a href="#" class="pagination__control">
+                        <</a>
+                            <ul class="paginaton__list">
+                                <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+                                <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                                <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                                <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                                <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+                                <li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
+                                <li class="pagination__item"><a href="#" class="pagination__link">7</a></li>
+                            </ul>
+                            <a href="#" class="pagination__control">></a>
                 </div>
 
                 <div class="form">
                     <form action="" class="form-comments">
                         <div class="form-comments__wrap">
-                            <div class="form-coomments__title">Оставить отзыв</div>
+                            <h2 class="form-coomments__title">Оставить отзыв</h2>
                             <div class="form-comments__input">
                                 <label class="form-comments__label" for="form-comments__input-name">Ваше имя</label>
                                 <input class="form-comments__input input-focus" type="text" id="form-comments__input-name" placeholder="Андрей">
@@ -163,8 +164,8 @@
                             </div>
                             <div class="form-comments__radio">
                                 <label class="form-comments__label" for="form-comments__radio-photo form-comments__">Отображать фото в отзыве?</label>
-                                <input type="radio" id="form-comments__radio-photo" name="form-comments__radio-photo" checked> Да
-                                <input type="radio" id="form-comments__radio-photo" name="form-comments__radio-photo"> Нет                            
+                                <input type="radio" id="form-comments__radio-photo" name="form-comments__radio-photo" checked>                                Да
+                                <input type="radio" id="form-comments__radio-photo" name="form-comments__radio-photo"> Нет
                             </div>
                             <div class="form-comments__button button-submit">
                                 <a href="#" class="button-submit__link">
@@ -182,21 +183,21 @@
         <footer class="footer">
             <div class="footer__copyright">
                 <p>Сделано с любовью и старанием на курсе «HTML + CSS» в <a href="#" class="footer__copyright-link">LoftSchool</a>.
-                    Автор работы: <span class="footer__copyright-text-strong"> Прохладов Вадим </span></p>            </div>
-            <div class="footer__logo">
-                <a href="" class="footer__logo-link">
-                <img src="../img/logos/logo_small.png" alt="AIR Planet">
-            </a>
+                    Автор работы: <span class="footer__copyright-text-strong"> Прохладов Вадим </span></p>
             </div>
-            <div class="footer__social">
-                <div class="footer__social-title">Наши социальные сети</div>
-                <div class="footer__social-icons">
-                    <ul class="footer__social-icons-list">
-                        <li class="footer__social-icons-item"></li>
-                        <li class="footer__social-icons-item"></li>
-                        <li class="footer__social-icons-item"></li>
-                        <li class="footer__social-icons-item"></li>
-                        <li class="footer__social-icons-item"></li>
+
+            <a href="#" class="header__logo main-logo">
+                <img src="img/logos/logo_small.png" alt="Логотип компании AIR Planet" class="main-logo__img">
+            </a>
+            <div class="footer__social socials">
+                <div class="socials__title">Наши социальные сети</div>
+                <div class="socials__icons">
+                    <ul class="socials__list">
+                        <li class="socials__item socials__item-vk"></li>
+                        <li class="socials__item socials__item-fb"></li>
+                        <li class="socials__item socials__item-gp"></li>
+                        <li class="socials__item socials__item-tw"></li>
+                        <li class="socials__item socials__item-email"></li>
                     </ul>
                 </div>
             </div>

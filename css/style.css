@@ -32,23 +32,26 @@ body {
     background-color: #1c5bc3;
 }
 
-.header__content-phone {
+.header__phone {
     color: #fff;
     font-weight: bold;
     font-size: 21px;
     text-decoration: none;
 }
 
-.header__content-schedule {
+.header__schedule {
     color: rgba(255, 255, 255, .7);
     font-weight: 300;
     font-size: 14px;
-    text-decoration: none;
+    background-color: transparent;
+    border: none;
     border-bottom: 1px solid rgba(255, 255, 255, .7);
+    padding: 0;
 }
 
-.header__content-schedule:hover {
+.header__schedule:hover {
     color: #fff;
+    border-bottom: 1px solid #fff;
 }
 
 /*------------- sidebar | all pages -------------*/
@@ -130,13 +133,12 @@ body {
     font-style: italic;
 }
 
-.breadchrumbs__link {
-    color: rgba(28, 91, 195, .8);
+.breadchrumbs__item {
+    color: rgba(34, 31, 31, .8);
 }
 
-.breadchrumbs__link-active {
-    color: rgba(34, 31, 31, .8);
-    text-decoration: none;
+.breadchrumbs__link {
+    color: rgba(28, 91, 195, .8);
 }
 
 /*------------- content | main.html -------------*/
@@ -178,76 +180,69 @@ body {
     list-style-type: none; 
 }
 
-.content__partners-item:nth-of-type(1) .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_01.png');
+.content__partners-item .content__partners-icon {
     background-position: 50% 50%;
     background-repeat: no-repeat;
+}
+
+.content__partners-item:nth-of-type(1) .content__partners-icon {
+    background-image: url('../img/partners/bmp_company.png');
     width: 160px;
     height: 30px;
 }
 
 .content__partners-item:nth-of-type(1):hover .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_01_hover.png');
+    background-image: url('../img/partners/bmp_company_hover.png');
 }
 
 .content__partners-item:nth-of-type(2) .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_02.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-image: url('../img/partners/tetra_instal.png');
     width: 161px;
     height: 64px;
 }
 
 .content__partners-item:nth-of-type(2):hover .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_02_hover.png');
+    background-image: url('../img/partners/tetra_instal_hover.png');
 }
 
 .content__partners-item:nth-of-type(3) .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_03.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-image: url('../img/partners/sibir_air.png');
     width: 133px;
     height: 64px;
 }
 
 .content__partners-item:nth-of-type(3):hover .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_03_hover.png');
+    background-image: url('../img/partners/sibir_air_hover.png');
 }
 
 .content__partners-item:nth-of-type(4) .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_04.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-image: url('../img/partners/one_air.png');
     width: 141px;
     height: 63px;
 }
 
 .content__partners-item:nth-of-type(4):hover .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_04_hover.png');
+    background-image: url('../img/partners/one_air_hover.png');
 }
 
 .content__partners-item:nth-of-type(5) .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_05.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-image: url('../img/partners/bing_air.png');
     width: 46px;
     height: 64px;
 }
 
 .content__partners-item:nth-of-type(5):hover .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_05_hover.png');
+    background-image: url('../img/partners/bing_air_hover.png');
 }
 
 .content__partners-item:nth-of-type(6) .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_06.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-image: url('../img/partners/ural.png');
     width: 82px;
     height: 64px;
 }
 
 .content__partners-item:nth-of-type(6):hover .content__partners-icon {
-    background-image: url('../img/partners/logo_partners_06_hover.png');
+    background-image: url('../img/partners/ural_hover.png');
 }
 
 /*------------- content | team.html -------------*/
@@ -407,8 +402,6 @@ body {
     outline: none;
 }
 
-.form-comments__input {
-}
 
 input[type=text]{
     border: none;
@@ -448,71 +441,59 @@ textarea {
     font-weight: bold;
 }
 
-.footer__social-title {
+.socials__title {
     font-weight: bold;
 }
 
-.footer__social-icons-list{
+.socials__list{
     list-style-type: none;
 }
 
-.footer__social-icons-item:nth-of-type(1) {
-    background-image: url('../img/icons/social/social_vk.png');
+.socials__item {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
 }
 
-.footer__social-icons-item:nth-of-type(1):hover {
+.socials__item-vk {
+    background-image: url('../img/icons/social/social_vk.png');
+}
+
+
+.socials__item-vk:hover {
     background-image: url('../img/icons/social/social_vk_hover.png');
 }
 
-.footer__social-icons-item:nth-of-type(2) {
+.socials__item-fb {
     background-image: url('../img/icons/social/social_facebook.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
 }
 
-.footer__social-icons-item:nth-of-type(2):hover {
+.socials__item-fb:hover {
     background-image: url('../img/icons/social/social_facebook_hover.png');
 }
 
-.footer__social-icons-item:nth-of-type(3) {
+.socials__item-gp {
     background-image: url('../img/icons/social/social_google.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
 }
 
-.footer__social-icons-item:nth-of-type(3):hover {
+.socials__item-gp:hover {
     background-image: url('../img/icons/social/social_google_hover.png');
 }
 
-.footer__social-icons-item:nth-of-type(4) {
+.socials__item-tw {
     background-image: url('../img/icons/social/social_twiter.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
 }
 
-.footer__social-icons-item:nth-of-type(4):hover {
+.socials__item-tw:hover {
     background-image: url('../img/icons/social/social_twiter_hover.png');
 }
 
-.footer__social-icons-item:nth-of-type(5) {
+.socials__item-email {
     background-image: url('../img/icons/social/social_gmail.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
 }
 
-.footer__social-icons-item:nth-of-type(5):hover {
+.socials__item-email:hover {
     background-image: url('../img/icons/social/social_gmail_hover.png');
 }
 

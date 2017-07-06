@@ -12,18 +12,22 @@
     <div class="wrapper">
 
         <!-- шапка -->
-        <header class="header">
-            <a href="#" class="header__logo main-logo">
-                <img src="img/logos/logo_small.png" alt="Логотип компании AIR Planet" class="main-logo__img">
-            </a>
-            <div class="header__contacts">
-                <a href="tel:+78000039210" class="header__phone">8(800) 00-392-10</a>
-                <button class="header__schedule">График работы</button>
+        <header class="header clearfix">
+            <div class="header__row-left">
+                <a href="#" class="header__logo main-logo">
+                    <img src="img/logos/logo_small.png" alt="Логотип компании AIR Planet" class="main-logo__img">
+                </a>
+            </div>
+            <div class="header__row-right">
+                <div class="header__contacts clearfix">
+                    <a href="tel:+78000039210" class="header__phone">8(800) 00-392-10</a>
+                    <button class="header__schedule">График работы</button>
+                </div>
             </div>
         </header>
 
         <!-- основной контент страницы -->
-        <section class="page">
+        <section class="page clearfix">
 
             <!-- боковая панель -->
             <aside class="sidebar">
@@ -58,7 +62,7 @@
             </aside>
 
             <!-- Содержание страницы -->
-            <main class="team-content">
+            <main class="content team-content">
                 <div class="breadchrumbs">
                     <ul class="breadchrumbs__list">
                         <li class="breadchrumbs__item"><a href="main.html" class="breadchrumbs__item breadchrumbs__link">Главная</a></li>

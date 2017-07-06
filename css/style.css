@@ -26,14 +26,42 @@ body {
     color: #221f1f;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /*------------- header | all pages -------------*/
 
 .header {
     background-color: #1c5bc3;
+    height: 76px;
 }
+
+.header__row-left {
+    float: left;
+    margin-top: 20px;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.header__row-right {
+    float: left;
+    width: 50%;
+    text-align: right;
+    margin-top: 18px;
+    padding-right: 20px;
+}
+
 
 .header__phone {
     color: #fff;
+    display: block;
     font-weight: bold;
     font-size: 21px;
     text-decoration: none;
@@ -47,6 +75,7 @@ body {
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, .7);
     padding: 0;
+    margin-top: 2px;
 }
 
 .header__schedule:hover {
@@ -54,10 +83,26 @@ body {
     border-bottom: 1px solid #fff;
 }
 
+.page {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    float: left;
+    width: 200px;
+}
+
+.content {
+    float: left;
+    width: 900px;
+}
+
 /*------------- sidebar | all pages -------------*/
 
 .nav-menu__list {
-    list-style-type: none; 
+    list-style-type: none;
+    padding-left: 20px; 
 }
 
 .nav-menu__link {
@@ -176,73 +221,53 @@ body {
 
 /*------------- content__partners | main.html -------------*/
 
+.content__partners-title {
+    font-size: 49px;
+    padding-top: 66px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
 .content__partners-list {
     list-style-type: none; 
+    padding: 0;
 }
 
-.content__partners-item .content__partners-icon {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+.content__partners-item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 59%;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
-.content__partners-item:nth-of-type(1) .content__partners-icon {
-    background-image: url('../img/partners/bmp_company.png');
-    width: 160px;
-    height: 30px;
+.content__partners-item:first-child {
+    width: 20%;
 }
 
-.content__partners-item:nth-of-type(1):hover .content__partners-icon {
-    background-image: url('../img/partners/bmp_company_hover.png');
+.content__partners-item:last-child {
+    width: 20%;
 }
 
-.content__partners-item:nth-of-type(2) .content__partners-icon {
-    background-image: url('../img/partners/tetra_instal.png');
-    width: 161px;
-    height: 64px;
+.content__partners-icon {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
-
-.content__partners-item:nth-of-type(2):hover .content__partners-icon {
-    background-image: url('../img/partners/tetra_instal_hover.png');
-}
-
-.content__partners-item:nth-of-type(3) .content__partners-icon {
-    background-image: url('../img/partners/sibir_air.png');
-    width: 133px;
-    height: 64px;
-}
-
-.content__partners-item:nth-of-type(3):hover .content__partners-icon {
-    background-image: url('../img/partners/sibir_air_hover.png');
-}
-
-.content__partners-item:nth-of-type(4) .content__partners-icon {
-    background-image: url('../img/partners/one_air.png');
-    width: 141px;
-    height: 63px;
-}
-
-.content__partners-item:nth-of-type(4):hover .content__partners-icon {
-    background-image: url('../img/partners/one_air_hover.png');
-}
-
-.content__partners-item:nth-of-type(5) .content__partners-icon {
-    background-image: url('../img/partners/bing_air.png');
-    width: 46px;
-    height: 64px;
-}
-
-.content__partners-item:nth-of-type(5):hover .content__partners-icon {
-    background-image: url('../img/partners/bing_air_hover.png');
-}
-
-.content__partners-item:nth-of-type(6) .content__partners-icon {
-    background-image: url('../img/partners/ural.png');
-    width: 82px;
-    height: 64px;
-}
-
-.content__partners-item:nth-of-type(6):hover .content__partners-icon {
-    background-image: url('../img/partners/ural_hover.png');
+.content__partners-icon:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none;
 }
 
 /*------------- content | team.html -------------*/

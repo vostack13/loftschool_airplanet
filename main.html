@@ -12,118 +12,129 @@
     <div class="wrapper">
 
         <!-- шапка -->
-        <header class="header">
-            <a href="#" class="header__logo main-logo">
-                <img src="img/logos/logo_small.png" alt="Логотип компании AIR Planet" class="main-logo__img">
-            </a>
-            <div class="header__contacts">
-                <a href="tel:+78000039210" class="header__phone">8(800) 00-392-10</a>
-                <button class="header__schedule">График работы</button>
+        <header class="header clearfix">
+            <div class="header__row-left">
+                <a href="/" class="header__logo main-logo">
+                    <img src="img/logos/logo_small.png" alt="Логотип компании AIR Planet" class="main-logo__img">
+                </a>
+            </div>
+            <div class="header__row-right">
+                <div class="header__contacts clearfix">
+                    <a href="tel:+78000039210" class="header__phone">8(800) 00-392-10</a>
+                    <button class="header__schedule">График работы</button>
+                </div>
             </div>
         </header>
 
-        <!-- боковая панель -->
-        <aside class="sidebar">
-            <nav class="nav-menu">
-                <ul class="nav-menu__list">
-                    <li class="nav-menu__item">
-                        <a href="#" class="nav-menu__link">
-                            <div class="nav-menu__item-icon nav-menu__link-active"></div>
-                            <div class="nav-menu__item-text nav-menu__link-text-active">
-                                Главная
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-menu__item">
-                        <a href="team.html" class="nav-menu__link">
-                            <div class="nav-menu__item-icon"></div>
-                            <div class="nav-menu__item-text">
-                                Экипаж
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-menu__item">
-                        <a href="comments.html" class="nav-menu__link">
-                            <div class="nav-menu__item-icon"></div>
-                            <div class="nav-menu__item-text">
-                                Отзывы
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+        <section class="page clearfix">
+            <!-- боковая панель -->
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item">
+                            <a href="#" class="nav-menu__link">
+                                <div class="nav-menu__item-icon nav-menu__link-active"></div>
+                                <div class="nav-menu__item-text nav-menu__link-text-active">
+                                    Главная
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="team.html" class="nav-menu__link">
+                                <div class="nav-menu__item-icon"></div>
+                                <div class="nav-menu__item-text">
+                                    Экипаж
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="comments.html" class="nav-menu__link">
+                                <div class="nav-menu__item-icon"></div>
+                                <div class="nav-menu__item-text">
+                                    Отзывы
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
 
-        <!-- Содержание страницы -->
-        <main class="main-content">
-            <div class="main-content__image">
-                <img src="img/content/about.jpg" alt="" class="main-content__picture">
-                <h1 class="main-content_title">О компании</h1>
-            </div>
+            <!-- Содержание страницы -->
+            <main class="content main-content">
+                <div class="main-content__image">
+                    <img src="img/content/about.jpg" alt="" class="main-content__picture">
+                    <h1 class="main-content_title">О компании</h1>
+                </div>
 
-            <div class="main-content__text">
-                <p><span class="main-content__text-strong">Air Planet</span> — это крупнейшая авиакомпания в Москве. Благодаря
-                    сотрудничеству с <span class="main-content__text-strong"> Europe Airlines </span>, мы предлагаем билеты
-                    на комфортабельные рейсы в большинство известных курортных городов Западной Европы. Также мы сотрудничаем
-                    с американскими и австралийскими авиакомпаниями, за счет чего обеспечиваем возможность заказа билетов
-                    на рейсы практически в любую точку мира.</p>
-                <p>Нашими ключевыми клиентами становятся:</p>
-                <ul>
-                    <li>Частные лица — туристы и путешественники, как самостоятельные, так и организованные турфирмами.</li>
-                    <li>Коммерческие организации, которые отправляют своих сотрудников в командировки. За счет отлаженной логистики
-                        мы готовы предложить наиболее выгодные цены.</li>
-                </ul>
-                <p>Поездки в столицы европейских стран осуществляются без пересадок. На дальние расстояния мы предлагаем оптимальные
-                    маршруты, с тщательным расчетом времени пересадки.</p>
-                <p>Оплата билетов осуществляется любым удобным способом – банковской картой, денежным переводом или наличными.
-                    Регулярно проводятся акции и скидки, особенно на раннее бронирование и оптовые заказы.</p>
-                <p>Наши аналитики исследуют рынок и помогают составить оптимальные маршруты, с учетом особенностей региона и
-                    других факторов.</p>
-                <p>Наши постоянные клиенты участвуют в бонусной программе и при накоплении достаточной суммы на своем виртуальном
-                    счету, могут оплатить билет бонусными баллами.</p>
-            </div>
+                <div class="main-content__text">
+                    <p><span class="main-content__text-strong">Air Planet</span> — это крупнейшая авиакомпания в Москве. Благодаря
+                        сотрудничеству с <span class="main-content__text-strong"> Europe Airlines </span>, мы предлагаем
+                        билеты на комфортабельные рейсы в большинство известных курортных городов Западной Европы. Также
+                        мы сотрудничаем с американскими и австралийскими авиакомпаниями, за счет чего обеспечиваем возможность
+                        заказа билетов на рейсы практически в любую точку мира.</p>
+                    <p>Нашими ключевыми клиентами становятся:</p>
+                    <ul>
+                        <li>Частные лица — туристы и путешественники, как самостоятельные, так и организованные турфирмами.</li>
+                        <li>Коммерческие организации, которые отправляют своих сотрудников в командировки. За счет отлаженной
+                            логистики мы готовы предложить наиболее выгодные цены.</li>
+                    </ul>
+                    <p>Поездки в столицы европейских стран осуществляются без пересадок. На дальние расстояния мы предлагаем
+                        оптимальные маршруты, с тщательным расчетом времени пересадки.</p>
+                    <p>Оплата билетов осуществляется любым удобным способом – банковской картой, денежным переводом или наличными.
+                        Регулярно проводятся акции и скидки, особенно на раннее бронирование и оптовые заказы.</p>
+                    <p>Наши аналитики исследуют рынок и помогают составить оптимальные маршруты, с учетом особенностей региона
+                        и других факторов.</p>
+                    <p>Наши постоянные клиенты участвуют в бонусной программе и при накоплении достаточной суммы на своем виртуальном
+                        счету, могут оплатить билет бонусными баллами.</p>
+                </div>
 
 
-            <div class="main-content__description">
-                <p>Бронировать билеты в нашей авиакомпании удобно. Для этого можно оставить <a href="#" class="main-content__link-apply"> заявку на сайте</a>                    или же позвонить по номеру круглосуточной поддержки <a href="tel:+78000039210" class="main-content__link-phone"> 8(800) 00-392-10</a>.</p>
-            </div>
+                <div class="main-content__description">
+                    <p>Бронировать билеты в нашей авиакомпании удобно. Для этого можно оставить <a href="#" class="main-content__link-apply"> заявку на сайте</a>                        или же позвонить по номеру круглосуточной поддержки <a href="tel:+78000039210" class="main-content__link-phone"> 8(800) 00-392-10</a>.</p>
+                </div>
 
-            <div class="content__partners">
-                <h2 class="content__partners-title">Партнеры</h2>
-                <ul class="content__partners-list">
-                    <li class="content__partners-item">
-                        <a href="#" class="content__partners-link">
-                            <div class="content__partners-icon"></div>
-                        </a>
-                    </li>
-                    <li class="content__partners-item">
-                        <a href="#" class="content__partners-link">
-                            <div class="content__partners-icon"></div>
-                        </a>
-                    </li>
-                    <li class="content__partners-item">
-                        <a href="#" class="content__partners-link">
-                            <div class="content__partners-icon"></div>
-                        </a>
-                    </li>
-                    <li class="content__partners-item">
-                        <a href="#" class="content__partners-link">
-                            <div class="content__partners-icon"></div>
-                        </a>
-                    </li>
-                    <li class="content__partners-item">
-                        <a href="#" class="content__partners-link">
-                            <div class="content__partners-icon"></div>
-                        </a>
-                    </li>
-                    <li class="content__partners-item">
-                        <a href="#" class="content__partners-link">
-                            <div class="content__partners-icon"></div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </main>
+                <div class="content__partners">
+                    <h2 class="content__partners-title">Партнеры</h2>
+                    <ul class="content__partners-list">
+                        <div class="content__item-row clearfix">
+                            <li class="content__partners-item">
+                                <a href="#" class="content__partners-link">
+                                <img src="../img/partners/bmp_company.png" alt="Bmp company" class="content__partners-icon">
+                            </a>
+                            </li>
+                            <li class="content__partners-item">
+                                <a href="#" class="content__partners-link">
+                                <img src="../img/partners/tetra_instal.png" alt="Tetra instal" class="content__partners-icon">
+                            </a>
+                            </li>
+                            <li class="content__partners-item">
+                                <a href="#" class="content__partners-link">
+                                <img src="../img/partners/sibir_air.png" alt="Sibir air" class="content__partners-icon">
+                            </a>
+                            </li>
+                        </div>
+                        <div class="content__item-row clearfix">
+                            <li class="content__partners-item">
+                                <a href="#" class="content__partners-link">
+                                <img src="../img/partners/one_air.png" alt="One air" class="content__partners-icon">
+                            </a>
+                            </li>
+
+                            <li class="content__partners-item">
+                                <a href="#" class="content__partners-link">
+                                <img src="../img/partners/bing_air.png" alt="Bing air" class="content__partners-icon">
+                            </a>
+                            </li>
+                            <li class="content__partners-item">
+                                <a href="#" class="content__partners-link">
+                                <img src="../img/partners/ural.png" alt="Ural" class="content__partners-icon">
+                            </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </main>
+        </section>
 
         <!-- футер -->
         <footer class="footer">

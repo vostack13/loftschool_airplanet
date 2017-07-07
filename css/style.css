@@ -102,73 +102,84 @@ body {
 
 .nav-menu__list {
     list-style-type: none;
-    padding-left: 20px; 
+    padding-left: -23px;
 }
 
-.nav-menu__link {
+.nav-menu__item {
+    margin-bottom: 30px;
+}
+
+.nav-menu__link-main,
+.nav-menu__link-team, 
+.nav-menu__link-comments {
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-.nav-menu__item:nth-of-type(1) .nav-menu__item-icon {
-    background-image: url('../img/icons/main.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 17px;
-    height: 18px;
-}
-
-.nav-menu__item:nth-of-type(1):hover .nav-menu__item-icon {
-    background-image: url('../img/icons/main_hover.png');
-}
-
-.nav-menu__item:nth-of-type(1) .nav-menu__link-active {
-    background-image: url('../img/icons/main_hover.png');
-}
-
-.nav-menu__item:nth-of-type(2) .nav-menu__item-icon {
-    background-image: url('../img/icons/team.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 23px;
-    height: 18px;
-}
-
-.nav-menu__item:nth-of-type(2):hover .nav-menu__item-icon {
-    background-image: url('../img/icons/team_hover.png');
-}
-
-.nav-menu__item:nth-of-type(2) .nav-menu__link-active {
-    background-image: url('../img/icons/team_hover.png');
-}
-
-.nav-menu__item:nth-of-type(3) .nav-menu__item-icon {
-    background-image: url('../img/icons/feed.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 23px;
-    height: 18px;
-}
-
-.nav-menu__item:nth-of-type(3):hover .nav-menu__item-icon {
-    background-image: url('../img/icons/feed_hover.png');
-}
-
-.nav-menu__item:nth-of-type(3) .nav-menu__link-active {
-    background-image: url('../img/icons/feed_hover.png');
-}
-
-.nav-menu__item-text {
     color: #1c5bc3;
     font-weight: bold;
+    display: inline-block;
+    max-width: 140px;
 }
 
-.nav-menu__item:hover .nav-menu__item-text {
-    color: #221f1f;    
+.nav-menu__link-main .nav-menu__text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -39px;
+    width: 23px;
+    height: 18px;
+    background-image: url('../img/icons/main.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
-.nav-menu__link-text-active {
-    color:#221f1f; 
+.nav-menu__link-main:hover .nav-menu__text::before,
+.nav-menu__link-main--active .nav-menu__text::before {
+    background-image: url('../img/icons/main_hover.png');
+}
+
+.nav-menu__link-team .nav-menu__text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -39px;
+    width: 23px;
+    height: 18px;
+    background-image: url('../img/icons/team.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.nav-menu__link-team:hover .nav-menu__text::before,
+.nav-menu__link-team--active .nav-menu__text::before {
+    background-image: url('../img/icons/team_hover.png');
+}
+
+.nav-menu__link-comments .nav-menu__text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -39px;
+    width: 23px;
+    height: 18px;
+    background-image: url('../img/icons/feed.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.nav-menu__link-comments:hover .nav-menu__text::before,
+.nav-menu__link-comments--active .nav-menu__text::before {
+    background-image: url('../img/icons/feed_hover.png');
+}
+
+.nav-menu__link-main--active,
+.nav-menu__link-team--active,
+.nav-menu__link-comments--active,
+.nav-menu__text:hover {
+    color: #221f1f;
 }
 
 /*------------- breadchrumbs | team, comments -------------*/

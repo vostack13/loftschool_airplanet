@@ -60,7 +60,8 @@ body {
     padding: 10px 0;
 }
 
-.header__container {
+.header__container,
+.footer__container {
     width: 1060px;
     margin: 0 auto;
 }
@@ -117,7 +118,7 @@ body {
 .sidebar {
     float: left;
     width: 180px;
-    margin-top: 45px; 
+    padding-top: 45px; 
 }
 
 .nav-menu__list {
@@ -496,10 +497,29 @@ textarea {
     background-color: #1c5bc3;
     color: #fff;
     margin-top: -77px;
+    font-size: 14px;
+}
+
+.footer__colum {
+    float: left;
+    width: 33.3%;
+    height: 77px;
+}
+
+.footer__colum--copyright {
+    text-align: left;
+    padding-top: 15px;
 }
 
 .footer__copyright {
-    font-size: 14px;
+    display: inline-block;
+    margin: 0px;
+    text-align: left;
+    line-height: 18px;
+}
+
+.footer__copyright p {
+    margin: 0;
 }
 
 .footer__copyright-link {
@@ -511,60 +531,40 @@ textarea {
     font-weight: bold;
 }
 
+.footer__colum--logo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer__colum--social {
+    text-align: right;
+    padding-top: 16px;
+}
+
+.socials {
+    display: inline-block;
+    text-align: left;
+}
+
 .socials__title {
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .socials__list{
+    display: inline-block;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .socials__item {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
+    float: left;
+    padding-right: 10px;
+    opacity: .8;
 }
 
-.socials__item-vk {
-    background-image: url('../img/icons/social/social_vk.png');
+.socials__item:hover {
+    opacity: 1;
 }
-
-
-.socials__item-vk:hover {
-    background-image: url('../img/icons/social/social_vk_hover.png');
-}
-
-.socials__item-fb {
-    background-image: url('../img/icons/social/social_facebook.png');
-}
-
-.socials__item-fb:hover {
-    background-image: url('../img/icons/social/social_facebook_hover.png');
-}
-
-.socials__item-gp {
-    background-image: url('../img/icons/social/social_google.png');
-}
-
-.socials__item-gp:hover {
-    background-image: url('../img/icons/social/social_google_hover.png');
-}
-
-.socials__item-tw {
-    background-image: url('../img/icons/social/social_twiter.png');
-}
-
-.socials__item-tw:hover {
-    background-image: url('../img/icons/social/social_twiter_hover.png');
-}
-
-.socials__item-email {
-    background-image: url('../img/icons/social/social_gmail.png');
-}
-
-.socials__item-email:hover {
-    background-image: url('../img/icons/social/social_gmail_hover.png');
-}
-
 

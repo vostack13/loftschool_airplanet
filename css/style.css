@@ -143,7 +143,9 @@ body {
 }
 
 .nav-menu__link:hover,
-.nav-menu__link--active .nav-menu__link {
+.nav-menu__link-main--active,
+.nav-menu__link-team--active,
+.nav-menu__link-comments--active {
     color: #221f1f;
 }
 
@@ -164,7 +166,7 @@ body {
 }
 
 .nav-menu__link--main:hover::before,
-.nav-menu__link--active .nav-menu__link--main::before {
+.nav-menu__link-main--active::before {
     background-image: url('../img/icons/main_hover.png');
 }
 
@@ -173,7 +175,7 @@ body {
 }
 
 .nav-menu__link--team:hover::before,
-.nav-menu__link--active .nav-menu__link--team::before {
+.nav-menu__link-team--active::before {
     background-image: url('../img/icons/team_hover.png');
 }
 
@@ -182,7 +184,7 @@ body {
 }
 
 .nav-menu__link--comments:hover::before,
-.nav-menu__link--active .nav-menu__link--comments::before {
+.nav-menu__link-comments--active::before {
     background-image: url('../img/icons/feed_hover.png');
 }
 
@@ -202,9 +204,13 @@ body {
 }
 
 /*------------- content | main.html -------------*/
-.main-content {
+
+.content {
     float: left;
     width: 880px;
+}
+
+.main-content {
     font-size: 18px;
     line-height: 30px;
 }

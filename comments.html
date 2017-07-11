@@ -12,30 +12,31 @@
     <div class="wrapper">
 
         <!-- шапка -->
-        <header class="header clearfix">
-            <div class="header__row-left">
-                <a href="#" class="header__logo main-logo">
-                    <img src="img/logos/logo_small.png" alt="Логотип компании AIR Planet" class="main-logo__img">
-                </a>
-            </div>
-            <div class="header__row-right">
-                <div class="header__contacts clearfix">
-                    <a href="tel:+78000039210" class="header__phone">8(800) 00-392-10</a>
-                    <button class="header__schedule">График работы</button>
+        <header class="header">
+            <div class="header__container clearfix">
+                <div class="header__left">
+                    <a href="/" class="header__logo main-logo">
+                        <img src="img/logos/logo_small.png" alt="Логотип компании AIR Planet" class="main-logo__img">
+                    </a>
+                </div>
+                <div class="header__right">
+                    <div class="header__contacts clearfix">
+                        <a href="tel:+78000039210" class="header__phone">8(800) 00-392-10</a>
+                        <button class="header__schedule">График работы</button>
+                    </div>
                 </div>
             </div>
         </header>
 
         <!-- основной контент страницы -->
-        <section class="page clearfix">
-
+        <div class="page__container clearfix">
             <!-- боковая панель -->
             <aside class="sidebar">
                 <nav class="nav-menu">
                     <ul class="nav-menu__list">
                         <li class="nav-menu__item">
                             <a href="main.html" class="nav-menu__link nav-menu__link--main">
-                                Главная 
+                                Главная
                             </a>
                         </li>
                         <li class="nav-menu__item">
@@ -44,7 +45,7 @@
                             </a>
                         </li>
                         <li class="nav-menu__item">
-                            <a href="#" class="nav-menu__link nav-menu__link--comments nav-menu__link--active">
+                            <a href="#" class="nav-menu__link nav-menu__link--comments nav-menu__link-comments--active">
                                 Отзывы
                             </a>
                         </li>
@@ -172,31 +173,63 @@
                     </form>
                 </div>
             </main>
-        </section>
-
+        </div>
+    </div>
         <!-- футер -->
-        <footer class="footer">
-            <div class="footer__copyright">
-                <p>Сделано с любовью и старанием на курсе «HTML + CSS» в <a href="#" class="footer__copyright-link">LoftSchool</a>.
-                    Автор работы: <span class="footer__copyright-text-strong"> Прохладов Вадим </span></p>
-            </div>
-
-            <a href="#" class="header__logo main-logo">
-                <img src="img/logos/logo_small.png" alt="Логотип компании AIR Planet" class="main-logo__img">
-            </a>
-            <div class="footer__social socials">
-                <div class="socials__title">Наши социальные сети</div>
-                <div class="socials__icons">
-                    <ul class="socials__list">
-                        <li class="socials__item socials__item-vk"></li>
-                        <li class="socials__item socials__item-fb"></li>
-                        <li class="socials__item socials__item-gp"></li>
-                        <li class="socials__item socials__item-tw"></li>
-                        <li class="socials__item socials__item-email"></li>
-                    </ul>
+    <footer class="footer">
+        <div class="footer__container clearfix">
+            <div class="footer__colum footer__colum--copyright">
+                <div class="footer__copyright">
+                    <p>Сделано с любовью и старанием </p>
+                    <p>на курсе «HTML + CSS» в <a href="#" class="footer__copyright-link">LoftSchool</a>.
+                    </p>
+                    <p>
+                        Автор работы: <span class="footer__copyright-text-strong"> Прохладов Вадим </span>
+                    </p>
                 </div>
             </div>
-        </footer>
+            <div class="footer__colum footer__colum--logo">
+                <a href="/" class="main-logo">
+                    <img src="img/logos/logo_small.png" alt="Логотип компании AIR Planet" class="main-logo__img">
+                </a>
+            </div>
+            <div class="footer__colum footer__colum--social ">
+                <div class="footer__socials socials ">
+                    <div class="socials__title">Наши социальные сети</div>
+
+                    <div class="socials__icons">
+                        <ul class="socials__list clearfix">
+                            <li class="socials__item">
+                                <a href="#" target="_blank" class="socials__link">
+                                    <img src="../img/icons/social/social_vk.png" alt="Вконтакте" class="socials__pic">
+                                </a>
+                            </li>
+                            <li class="socials__item socials__item-fb">
+                                <a href="#" target="_blank" class="socials__link">
+                                    <img src="../img/icons/social/social_facebook.png" alt="Вконтакте" class="socials__pic">
+                                </a>
+                            </li>
+                            <li class="socials__item socials__item-gp">
+                                <a href="#" target="_blank" class="socials__link">
+                                    <img src="../img/icons/social/social_google.png" alt="Вконтакте" class="socials__pic">
+                                </a>
+                            </li>
+                            <li class="socials__item socials__item-tw">
+                                <a href="#" target="_blank" class="socials__link">
+                                    <img src="../img/icons/social/social_twiter.png" alt="Вконтакте" class="socials__pic">
+                                </a>
+                            </li>
+                            <li class="socials__item socials__item-email">
+                                <a href="#" target="_blank" class="socials__link">
+                                    <img src="../img/icons/social/social_gmail.png" alt="Вконтакте" class="socials__pic">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
 
 </body>

@@ -203,6 +203,9 @@ body {
 .breadchrumbs__list {
     list-style-type: none;
     font-style: italic;
+    margin-top: 44px;
+    margin-bottom: 30px;
+    padding: 0;
 }
 
 .breadchrumbs__item {
@@ -362,67 +365,90 @@ body {
 
 /*------------- content | team.html -------------*/
 
-.team-user__list {
-    list-style-type: none;
+.team-content__title {
+    font-size: 49px;
 }
 
-.team-user__item .team-user__item-image {
+.team-user__list {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0;
+}
+
+.team-user__item {
+    width: 290px;
+    text-align: center;
+    line-height: 21px;
+    display: inline-block;
+    padding: 20px 10px;
+    vertical-align: top;
+}
+
+.team-user__img {
+    display: inline-block;
     width: 160px;
     height: 160px;
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
 }
 
-.team-user__item:nth-of-type(1) .team-user__item-avatar {
-    position: relative;
+.team-user__img-pic {
+    display: block;
+    position: absolute;
+}
+
+.team-user__img-pic--one {
     top: -25px;
     left: -75px;
 }
 
-.team-user__item:nth-of-type(2) .team-user__item-avatar {
-    position: relative;
+.team-user__img-pic--two {
     top: -10px;
     left: -120px;
 }
 
-.team-user__item:nth-of-type(3) .team-user__item-avatar {
-    position: relative;
+.team-user__img-pic--three {
     width: 600px;
     top: -130px;
     left: -165px;
 }
 
-.team-user__item:nth-of-type(4) .team-user__item-avatar {
-    position: relative;
+.team-user__img-pic--four {
     width: 160px;
     top: 0px;
     left: 0px;
 }
 
-.team-user__item:nth-of-type(5) .team-user__item-avatar {
-    position: relative;
+.team-user__img-pic--five {
     top: -20px;
     left: -280px;
 }
 
-.team-user__item:nth-of-type(6) .team-user__item-avatar {
-    position: relative;
+.team-user__img-pic--six {
     width: 330px;
     top: 0px;
     left: -150px;
 }
 
 .item-text__user {
-    font-size: 18px;
     font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0 5px 0;
 }
 
 .item-text__desc {
-    color: #1c5bc3;
     font-weight: bold;
     font-size: 14px;
+    color: #1c5bc3;
+    margin: 0 0 10px 0;
 }
 
+.item-text__content {
+    margin: 0;
+    font-size: 14px;
+}
 
 /*------------- content | comments.html -------------*/
 

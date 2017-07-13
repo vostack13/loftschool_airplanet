@@ -54,11 +54,76 @@ body {
     clear: both;
 }
 
-.wrapper--intro {
+/*------------- intro page | index.html -------------*/
+
+.wrapper__intro {
     background-image: url(../img/bg/bg_intro.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    min-width: 210px;
 }
 
+.wrapper__intro::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+}
+
+.intro__content {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.intro__logo {
+    margin-bottom: 40px;
+}
+
+.intro__link {
+    display: block;
+    width: 207px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #1c5bc4;
+    text-decoration: none;
+}
+
+.intro__link::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+}
+
+.intro__link-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #1c5bc4;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .2em;
+}
+
+.intro__link-text::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 7px;
+
+    width: 14px;
+    height: 15px;
+    background-image: url('/img/icons/main.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
 
 /*------------- header | all pages -------------*/
 
@@ -683,6 +748,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .form__radio-elem {

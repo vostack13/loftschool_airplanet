@@ -130,7 +130,6 @@ body {
     background-image: url('../img/icons/spritesheet.png');
     background-repeat: no-repeat;
     background-position: -32px -63px;
-    /* background-size: cover;  */
 }
 
 /*------------- header | all pages -------------*/
@@ -200,7 +199,7 @@ body {
 }
 
 .header__contacts-elem:hover .schedule__dropdown {
-    display: block;
+    opacity: 1;
 }
 
 .schedule__dropdown {
@@ -217,7 +216,8 @@ body {
     top: 100%; 
     z-index: 100;
     margin-top: 19px;
-    display: none;
+    opacity: 0;
+    transition: opacity 2s;
 }
 
 .schedule__dropdown::before {
@@ -288,6 +288,7 @@ body {
     padding-left: 37px;
     font-size: 12px;
     letter-spacing: 0.2em;
+    transition: color .7s;
 }
 
 .nav-menu__link:hover,
@@ -297,7 +298,8 @@ body {
     color: #221f1f;
 }
 
-.nav-menu__link::before {
+.nav-menu__link::before,
+.nav-menu__link::after {
     content: "";
     display: block;
     width: 23px;
@@ -308,35 +310,74 @@ body {
     background-image: url('../img/icons/spritesheet.png');
     background-repeat: no-repeat;
     background-position: 0;
+    transition: opacity .5s;
 }
 
 .nav-menu__link--main::before {
-     background-position: -3px -32px;  
+     background-position: -3px -32px;
+     opacity: 1;  
+}
+
+.nav-menu__link--main::after {
+     background-position: -61px -5px;
+     opacity: 0;  
 }
 
 .nav-menu__link--main:hover::before,
 .nav-menu__link-main--active::before {
      background-position: -61px -5px;
+     opacity: 0;
+}
+
+.nav-menu__link--main:hover::after,
+.nav-menu__link-main--active::after {
+     background-position: -61px -5px;
+     opacity: 1;
 }
 
 .nav-menu__link--team::before {
-     background-position: -57px -33px;  
-}
+    background-position: -57px -33px;
+    opacity: 1;
+}  
+
+.nav-menu__link--team::after {
+    background-position: -5px -61px;
+    opacity: 0;
+}  
 
 .nav-menu__link--team:hover::before,
 .nav-menu__link-team--active::before {
-     background-position: -5px -61px;  
+    background-position: -57px -33px;
+    opacity: 0;
+}
+
+.nav-menu__link--team:hover::after,
+.nav-menu__link-team--active::after {
+    background-position: -5px -61px;
+    opacity: 1;
 }
 
 .nav-menu__link--comments::before {
-     background-position: -3px -5px;  
+    background-position: -3px -5px;
+    opacity: 1;  
+}
+
+.nav-menu__link--comments::after {
+     background-position: -32px -5px;
+     opacity: 0;  
 }
 
 .nav-menu__link--comments:hover::before,
 .nav-menu__link-comments--active::before {
-     background-position: -32px -5px;  
+     background-position: -3px -5px;
+     opacity: 0;  
 }
 
+.nav-menu__link--comments:hover::after,
+.nav-menu__link-comments--active::after {
+     background-position: -32px -5px;
+     opacity: 1;  
+}
 
 /*------------- breadchrumbs | team, comments -------------*/
 
@@ -1039,6 +1080,7 @@ body {
     float: left;
     padding-right: 10px;
     opacity: .8;
+    transition: opacity 0.7s;
 }
 
 .socials__item:hover {

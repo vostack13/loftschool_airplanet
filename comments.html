@@ -15,13 +15,13 @@
         <header class="header">
             <div class="header__container clearfix">
                 <div class="header__left">
-                    <a href="/" class="header__logo main-logo">
+                    <a href="main.html" class="header__logo main-logo">
                         <img src="img/logos/logo_small.png" alt="Логотип компании AIR Planet" class="main-logo__img">
                     </a>
                 </div>
                 <div class="header__right">
                     <div class="header__contacts clearfix">
-                        <a href="tel:+78000039210" class="header__phone">8(800) 00-392-10</a>
+                        <a href="tel:+78000039210" class="header__phone">8 (800) 00-392-10</a>
                         <div class="header__contacts-elem">
                             <button class="header__schedule">График работы</button>
                             <div class="schedule__dropdown">
@@ -45,9 +45,7 @@
                 <nav class="nav-menu">
                     <ul class="nav-menu__list">
                         <li class="nav-menu__item">
-                            <a href="main.html" class="nav-menu__link nav-menu__link--main">
-                                Главная
-                            </a>
+                            <a href="main.html" class="nav-menu__link nav-menu__link--main">Главная </a>
                         </li>
                         <li class="nav-menu__item">
                             <a href="team.html" class="nav-menu__link nav-menu__link--team">
@@ -67,8 +65,12 @@
             <main class="content comments-content">
                 <div class="breadchrumbs">
                     <ul class="breadchrumbs__list">
-                        <li class="breadchrumbs__item"><a href="main.html" class="breadchrumbs__link">Главная</a></li>
-                        <li class="breadchrumbs__item breadchrumbs__item--active"><span class="breadchrumbs__link">Экипаж</span></li>
+                        <li class="breadchrumbs__item">
+                            <a href="main.html" class="breadchrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadchrumbs__item breadchrumbs__item--active">
+                            <span class="breadchrumbs__text">Отзывы</span>
+                        </li>
                     </ul>
                 </div>
 
@@ -138,20 +140,19 @@
                         <span class="pagination__info-item">из</span>
                         <span class="pagination__info-item">7</span>
                     </div>
-                    <ul class="pagination__list clearfix">
-                        <li class="pagination__item">
-                            <a href="#" class="pagination__link pagination__link--off">
-                                <</a>
-                        </li>
-                        <li class="pagination__item "><a href="#" class="pagination__link pagination__link--active">1</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">7</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">></a></li>
-                    </ul>
+                    <div class="pagination__controls">
+                        <a href="#" class="pagination__arrow pagination__arrow--prev"><</a>
+                        <ul class="pagination__list">
+                            <li class="pagination__item "><a href="#" class="pagination__link pagination__link--active">1</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">7</a></li>
+                        </ul>
+                        <a href="#" class="pagination__arrow pagination__arrow--next">></a>
+                    </div>
                 </div>
 
                 <div class="form">
@@ -180,7 +181,7 @@
                                     <div class="form__field-title">
                                         Текст отзыва
                                     </div>
-                                    <textarea class="form__textarea" placeholder="Введите отзыв"></textarea>
+                                    <textarea class="form__textarea" placeholder="Введите отзыв">Мне понравилось</textarea>
                                 </label>
                             </div>
 
@@ -241,22 +242,22 @@
                                     <img src="../img/icons/social/social_vk.png" alt="Вконтакте" class="socials__pic">
                                 </a>
                             </li>
-                            <li class="socials__item socials__item-fb">
+                            <li class="socials__item">
                                 <a href="#" target="_blank" class="socials__link">
                                     <img src="../img/icons/social/social_facebook.png" alt="Вконтакте" class="socials__pic">
                                 </a>
                             </li>
-                            <li class="socials__item socials__item-gp">
+                            <li class="socials__item">
                                 <a href="#" target="_blank" class="socials__link">
                                     <img src="../img/icons/social/social_google.png" alt="Вконтакте" class="socials__pic">
                                 </a>
                             </li>
-                            <li class="socials__item socials__item-tw">
+                            <li class="socials__item">
                                 <a href="#" target="_blank" class="socials__link">
                                     <img src="../img/icons/social/social_twiter.png" alt="Вконтакте" class="socials__pic">
                                 </a>
                             </li>
-                            <li class="socials__item socials__item-email">
+                            <li class="socials__item">
                                 <a href="#" target="_blank" class="socials__link">
                                     <img src="../img/icons/social/social_gmail.png" alt="Вконтакте" class="socials__pic">
                                 </a>

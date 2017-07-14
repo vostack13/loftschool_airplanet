@@ -185,6 +185,7 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, .7);
     padding: 0 2px 0 0;
     margin-top: 8px;
+    transition: color 0.7s;
 }
 
 .header__contacts-elem {
@@ -217,7 +218,7 @@ body {
     z-index: 100;
     margin-top: 19px;
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity 0.7s;
 }
 
 .schedule__dropdown::before {
@@ -1085,4 +1086,32 @@ body {
 
 .socials__item:hover {
     opacity: 1;
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada:hover {
+  animation-name: tada;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
